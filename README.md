@@ -1,2 +1,2 @@
 # adriankulajev.github.io
-Repozitorija skirta praktiniams darbas iš kažkokio labai svarbaus dalyko man rods
+Repozitorija skirta praktiniams darbas iš kažkokio labai svarbaus ir baisaus dalyko man rods
