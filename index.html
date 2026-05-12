@@ -12,11 +12,22 @@
     <div class="container header-content">
         <h1>Vilniaus miesto interaktyvūs žemėlapiai</h1>
         <nav>
-            <a href="#apie">Apie</a>
-            <a href="#zemelapiai">Žemėlapiai</a>
-            <a href="#informacija">Informacija</a>
-            <a href="kontaktai.html">Kontaktai</a>
-        </nav>
+    <a href="#apie">Apie</a>
+
+    <div class="dropdown">
+        <a href="#zemelapiai">Žemėlapiai</a>
+        <div class="dropdown-content">
+            <a href="#map1">Analitinis žemėlapis</a>
+            <a href="#map2">Papildomas žemėlapis</a>
+            <a href="#map3">Teminis žemėlapis</a>
+            <a href="#map4">Pranešimų peržiūra</a>
+            <a href="#map5">Pranešimų registravimas</a>
+        </div>
+    </div>
+
+    <a href="#informacija">Informacija</a>
+    <a href="kontaktai.html">Kontaktai</a>
+</nav>
     </div>
 </header>
 
@@ -72,31 +83,31 @@
 <section id="zemelapiai" class="section">
     <h2>Interaktyvūs žemėlapiai</h2>
 
-    <div class="map-card">
-        <h3>1 praktinis darbas – analitinis žemėlapis</h3>
-        <p>Kepler.gl aplinkoje parengtas Vilniaus miesto duomenų analizės žemėlapis.</p>
-        <iframe src="1praktinis/map_1.html"></iframe>
-    </div>
+    <div class="map-card" id="map1">
+    <h3>1 praktinis darbas – analitinis žemėlapis</h3>
+    <p>Kepler.gl aplinkoje parengtas Alytaus miesto duomenų analizės žemėlapis.</p>
+    <iframe src="1praktinis/map_1.html"></iframe>
+</div>
 
-    <div class="map-card">
+    <div class="map-card" id="map2">
         <h3>1 praktinis darbas – papildomas žemėlapis</h3>
         <p>Kitas praktinio darbo metu sukurtas interaktyvus žemėlapis.</p>
         <iframe src="1praktinis/map_2.html"></iframe>
     </div>
 
-    <div class="map-card">
+    <div class="map-card" id="map3">
         <h3>2 praktinis darbas – teminis žemėlapis</h3>
         <p>Geoportal ir QGIS duomenų pagrindu sukurtas teminis žemėlapis.</p>
         <iframe src="2_praktinis/map.html"></iframe>
     </div>
 
-    <div class="map-card">
+    <div class="map-card" id="map4">
         <h3>3 praktinis darbas – pranešimų peržiūra</h3>
         <p>ArcGIS Online pagrindu sukurtas žemėlapis, skirtas duomenų peržiūrai.</p>
         <iframe src="3_praktinis/pranesimu_perziura.html"></iframe>
     </div>
 
-    <div class="map-card">
+    <div class="map-card" id="map5">
         <h3>3 praktinis darbas – pranešimų registravimas</h3>
         <p>Žemėlapis, skirtas naujų objektų arba pranešimų registravimui.</p>
         <iframe src="3_praktinis/pranesimu_registravimas.html"></iframe>
