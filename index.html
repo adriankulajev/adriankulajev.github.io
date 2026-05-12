@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alytaus erdvinių duomenų žemėlapiai</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <h1>Alytaus erdvinių duomenų žemėlapiai</h1>
+    <nav>
+      <a href="#apie">Apie</a>
+      <a href="#zemelapiai">Žemėlapiai</a>
+      <a href="kontaktai.html">Kontaktai</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>Interaktyvių GIS žemėlapių svetainė</h2>
+    <p>
+      Svetainėje pateikiami praktinių darbų metu sukurti interaktyvūs žemėlapiai,
+      pristatantys Alytaus miesto ir rajono demografinius, teminius bei erdvinius duomenis.
+    </p>
+  </div>
+</section>
+
+<section id="apie" class="container section">
+  <h2>Apie projektą</h2>
+  <p>
+    Ši svetainė sukurta interneto technologijų ir GIS praktiniams darbams.
+    Joje integruoti Kepler.gl, Geoportal.lt ir ArcGIS Online aplinkose parengti žemėlapiai.
+  </p>
+</section>
+
+<section class="container cards">
+  <div class="card">
+    <h3>Demografiniai duomenys</h3>
+    <p>Gyventojų pasiskirstymas, tankis ir struktūra analizuojami gardelių bei seniūnijų lygmeniu.</p>
+  </div>
+  <div class="card">
+    <h3>Teminiai sluoksniai</h3>
+    <p>Naudojami publikuoti WMS servisai ir vieši geoportal.lt duomenys.</p>
+  </div>
+  <div class="card">
+    <h3>Interaktyvumas</h3>
+    <p>Žemėlapiuose galima peržiūrėti atributinę informaciją, sluoksnius ir erdvinius rodiklius.</p>
+  </div>
+</section>
+
+<section id="zemelapiai" class="container section">
+  <h2>Žemėlapiai</h2>
+
+  <div class="map-block">
+    <h3>1 praktinis darbas – Kepler.gl analitiniai žemėlapiai</h3>
+    <iframe src="1praktinis/map_2.html" class="map-frame" title="Kepler analitinis žemėlapis"></iframe>
+  </div>
+
+  <div class="map-block">
+    <h3>2 praktinis darbas – Geoportal teminis žemėlapis</h3>
+    <iframe src="2praktinis/map_1.html" class="map-frame" title="Geoportal teminis žemėlapis"></iframe>
+  </div>
+
+  <div class="map-block">
+    <h3>3 praktinis darbas – ArcGIS Online žemėlapis</h3>
+    <iframe src="3praktinis/map_1.html" class="map-frame" title="ArcGIS Online žemėlapis"></iframe>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Adrian Kulajev | Sukurta praktiniams GIS darbams</p>
+</footer>
+
+</body>
+</html>
