@@ -1,78 +1,116 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alytaus erdvinių duomenų žemėlapiai</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilniaus miesto interaktyvūs žemėlapiai</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-  <div class="container nav">
-    <h1>Alytaus erdvinių duomenų žemėlapiai</h1>
-    <nav>
-      <a href="#apie">Apie</a>
-      <a href="#zemelapiai">Žemėlapiai</a>
-      <a href="kontaktai.html">Kontaktai</a>
-    </nav>
-  </div>
+<header class="site-header">
+    <div class="container header-content">
+        <h1>Vilniaus miesto interaktyvūs žemėlapiai</h1>
+        <nav>
+            <a href="#apie">Apie</a>
+            <a href="#zemelapiai">Žemėlapiai</a>
+            <a href="#informacija">Informacija</a>
+            <a href="kontaktai.html">Kontaktai</a>
+        </nav>
+    </div>
 </header>
 
 <section class="hero">
-  <div class="container">
-    <h2>Interaktyvių GIS žemėlapių svetainė</h2>
+    <div class="container hero-content">
+        <h2>Geografinės informacijos sistemos miesto analizei</h2>
+        <p>
+            Šioje svetainėje pateikiami praktinių užduočių metu sukurti interaktyvūs žemėlapiai,
+            skirti Vilniaus miesto teritorijos, infrastruktūros ir geografinių duomenų analizei.
+        </p>
+        <a href="#zemelapiai" class="button">Peržiūrėti žemėlapius</a>
+    </div>
+</section>
+
+<main class="container">
+
+<section id="apie" class="section card">
+    <h2>Svetainės paskirtis</h2>
     <p>
-      Svetainėje pateikiami praktinių darbų metu sukurti interaktyvūs žemėlapiai,
-      pristatantys Alytaus miesto ir rajono demografinius, teminius bei erdvinius duomenis.
+        Svetainė sukurta kaip internetinių GIS technologijų praktinis darbas. Joje integruoti
+        ankstesnėse užduotyse parengti interaktyvūs žemėlapiai: analitiniai kepler.gl žemėlapiai,
+        teminis geoportal duomenų pagrindu sukurtas žemėlapis ir ArcGIS Online aplinkoje parengti
+        duomenų peržiūros bei redagavimo žemėlapiai.
     </p>
-  </div>
 </section>
 
-<section id="apie" class="container section">
-  <h2>Apie projektą</h2>
-  <p>
-    Ši svetainė sukurta interneto technologijų ir GIS praktiniams darbams.
-    Joje integruoti Kepler.gl, Geoportal.lt ir ArcGIS Online aplinkose parengti žemėlapiai.
-  </p>
+<section id="informacija" class="section info-grid">
+    <div class="info-card">
+        <h3>Miesto duomenų analizė</h3>
+        <p>
+            Interaktyvūs žemėlapiai leidžia nagrinėti Vilniaus miesto teritorinius duomenis,
+            gyventojų tinklą, pastatus, seniūnijas ir miesto ribas.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <h3>Švietimo įstaigos</h3>
+        <p>
+            Teminiuose žemėlapiuose pateikiama informacija apie švietimo įstaigų pasiskirstymą
+            miesto teritorijoje ir jų ryšį su gyvenamosiomis zonomis.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <h3>Duomenų redagavimas</h3>
+        <p>
+            ArcGIS Online žemėlapiai naudojami geografinių objektų peržiūrai ir registravimui,
+            todėl svetainė gali būti taikoma ne tik analizei, bet ir duomenų rinkimui.
+        </p>
+    </div>
 </section>
 
-<section class="container cards">
-  <div class="card">
-    <h3>Demografiniai duomenys</h3>
-    <p>Gyventojų pasiskirstymas, tankis ir struktūra analizuojami gardelių bei seniūnijų lygmeniu.</p>
-  </div>
-  <div class="card">
-    <h3>Teminiai sluoksniai</h3>
-    <p>Naudojami publikuoti WMS servisai ir vieši geoportal.lt duomenys.</p>
-  </div>
-  <div class="card">
-    <h3>Interaktyvumas</h3>
-    <p>Žemėlapiuose galima peržiūrėti atributinę informaciją, sluoksnius ir erdvinius rodiklius.</p>
-  </div>
+<section id="zemelapiai" class="section">
+    <h2>Interaktyvūs žemėlapiai</h2>
+
+    <div class="map-card">
+        <h3>1 praktinis darbas – analitinis žemėlapis</h3>
+        <p>Kepler.gl aplinkoje parengtas Vilniaus miesto duomenų analizės žemėlapis.</p>
+        <iframe src="1praktinis/map_1.html"></iframe>
+    </div>
+
+    <div class="map-card">
+        <h3>1 praktinis darbas – papildomas žemėlapis</h3>
+        <p>Kitas praktinio darbo metu sukurtas interaktyvus žemėlapis.</p>
+        <iframe src="1praktinis/map_2.html"></iframe>
+    </div>
+
+    <div class="map-card">
+        <h3>2 praktinis darbas – teminis žemėlapis</h3>
+        <p>Geoportal ir QGIS duomenų pagrindu sukurtas teminis žemėlapis.</p>
+        <iframe src="2_praktinis/map.html"></iframe>
+    </div>
+
+    <div class="map-card">
+        <h3>3 praktinis darbas – pranešimų peržiūra</h3>
+        <p>ArcGIS Online pagrindu sukurtas žemėlapis, skirtas duomenų peržiūrai.</p>
+        <iframe src="3_praktinis/pranesimu_perziura.html"></iframe>
+    </div>
+
+    <div class="map-card">
+        <h3>3 praktinis darbas – pranešimų registravimas</h3>
+        <p>Žemėlapis, skirtas naujų objektų arba pranešimų registravimui.</p>
+        <iframe src="3_praktinis/pranesimu_registravimas.html"></iframe>
+    </div>
 </section>
 
-<section id="zemelapiai" class="container section">
-  <h2>Žemėlapiai</h2>
+</main>
 
-  <div class="map-block">
-    <h3>1 praktinis darbas – Kepler.gl analitiniai žemėlapiai</h3>
-    <iframe src="1praktinis/map_2.html" class="map-frame" title="Kepler analitinis žemėlapis"></iframe>
-  </div>
-
-  <div class="map-block">
-    <h3>2 praktinis darbas – Geoportal teminis žemėlapis</h3>
-    <iframe src="2praktinis/map_1.html" class="map-frame" title="Geoportal teminis žemėlapis"></iframe>
-  </div>
-
-  <div class="map-block">
-    <h3>3 praktinis darbas – ArcGIS Online žemėlapis</h3>
-    <iframe src="3praktinis/map_1.html" class="map-frame" title="ArcGIS Online žemėlapis"></iframe>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Adrian Kulajev | Sukurta praktiniams GIS darbams</p>
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 Vilniaus miesto interaktyvūs žemėlapiai</p>
+        <p>Sukurta interneto technologijų ir GIS praktinei užduočiai</p>
+        <a href="kontaktai.html">Kontaktai</a>
+    </div>
 </footer>
 
 </body>
