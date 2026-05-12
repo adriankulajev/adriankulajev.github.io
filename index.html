@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vilniaus miesto interaktyvūs žemėlapiai</title>
+    <title>Alytaus GIS</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="site-header">
     <div class="container header-content">
-        <h1>Vilniaus miesto interaktyvūs žemėlapiai</h1>
+        <div class="nav-logo">
+    <img src="img/logo.png" alt="Alytaus GIS logo">
+    <span>Alytaus GIS</span>
+</div>
   <nav>
+    <a href="#pradzia">Pradžia</a>
     <a href="#apie">Apie</a>
 
     <div class="dropdown">
         <a href="#zemelapiai">Žemėlapiai</a>
         <div class="dropdown-content">
-            <a href="#map1">Analitinis žemėlapis</a>
+            <a href="#map1">Gyvenamųjų pastatų žemėlapis</a>
             <a href="#map2">Papildomas žemėlapis</a>
             <a href="#map3">Teminis žemėlapis</a>
             <a href="#map4">Pranešimų peržiūra</a>
-            <a href="#map5">Pranešimų registravimas</a>
         </div>
     </div>
-
-    <a href="#informacija">Informacija</a>
+    
     <a href="kontaktai.html">Kontaktai</a>
 </nav>
     </div>
 </header>
 
-<section class="hero">
+<section class="hero" id="pradzia">
     <div class="container hero-content">
-        <h2>Geografinės informacijos sistemos miesto analizei</h2>
+        <h2>Alytaus miesto žemėlapių portalas</h2>
         <p>
             Šioje svetainėje pateikiami praktinių užduočių metu sukurti interaktyvūs žemėlapiai,
-            skirti Vilniaus miesto teritorijos, infrastruktūros ir geografinių duomenų analizei.
+            skirti Alytaus miesto teritorijos, infrastruktūros ir geografinių duomenų analizei.
         </p>
         <a href="#zemelapiai" class="button">Peržiūrėti žemėlapius</a>
     </div>
@@ -44,40 +46,32 @@
 
 <main class="container">
 
-<section id="apie" class="section card">
-    <h2>Svetainės paskirtis</h2>
-    <p>
-        Svetainė sukurta kaip internetinių GIS technologijų praktinis darbas. Joje integruoti
-        ankstesnėse užduotyse parengti interaktyvūs žemėlapiai: analitiniai kepler.gl žemėlapiai,
-        teminis geoportal duomenų pagrindu sukurtas žemėlapis ir ArcGIS Online aplinkoje parengti
-        duomenų peržiūros bei redagavimo žemėlapiai.
-    </p>
-</section>
+<section id="apie" class="about-section">
 
-<section id="informacija" class="section info-grid">
-    <div class="info-card">
-        <h3>Miesto duomenų analizė</h3>
+    <div class="about-container">
+
+        <span class="section-tag">
+            APIE PORTALĄ
+        </span>
+
+        <h2>
+            Interaktyvūs Alytaus miesto GIS žemėlapiai
+        </h2>
+
         <p>
-            Interaktyvūs žemėlapiai leidžia nagrinėti Vilniaus miesto teritorinius duomenis,
-            gyventojų tinklą, pastatus, seniūnijas ir miesto ribas.
+            Šioje svetainėje pateikiami praktinių užduočių metu sukurti
+            interaktyvūs žemėlapiai, skirti Alytaus miesto teritorijos,
+            infrastruktūros ir geografinių duomenų analizei.
         </p>
+
+        <p>
+            Portale integruoti kepler.gl, Geoportal ir ArcGIS Online
+            pagrindu sukurti žemėlapiai, leidžiantys analizuoti miesto
+            duomenis bei vykdyti objektų peržiūrą.
+        </p>
+
     </div>
 
-    <div class="info-card">
-        <h3>Švietimo įstaigos</h3>
-        <p>
-            Teminiuose žemėlapiuose pateikiama informacija apie švietimo įstaigų pasiskirstymą
-            miesto teritorijoje ir jų ryšį su gyvenamosiomis zonomis.
-        </p>
-    </div>
-
-    <div class="info-card">
-        <h3>Duomenų redagavimas</h3>
-        <p>
-            ArcGIS Online žemėlapiai naudojami geografinių objektų peržiūrai ir registravimui,
-            todėl svetainė gali būti taikoma ne tik analizei, bet ir duomenų rinkimui.
-        </p>
-    </div>
 </section>
 
 <section id="zemelapiai" class="section">
