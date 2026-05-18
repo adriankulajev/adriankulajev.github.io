@@ -31,11 +31,21 @@ body {
     width: 100%;
     z-index: 1000;
 
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+    background: transparent;
+    backdrop-filter: none;
 
     padding: 22px 0;
-    transition: 0.3s;
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+.site-header.hide {
+    transform: translateY(-100%);
+}
+
+.site-header.show {
+    transform: translateY(0);
 }
 
 .header-content {
@@ -74,6 +84,12 @@ nav a:hover,
 
 nav a.active {
     background: rgba(255,255,255,0.18);
+}
+
+.nav-logo,
+nav a,
+.dropdown > a {
+    text-shadow: 0 2px 12px rgba(0,0,0,0.7);
 }
 
 .nav-logo {
@@ -168,14 +184,14 @@ nav a.active {
 }
 
 .hero h2 {
-    font-size: 67px;
+    font-size: clamp(42px, 5vw, 76px);
     line-height: 1.05;
     margin-bottom: 28px;
     font-weight: 800;
 }
 
 .hero p {
-    font-size: 22px;
+    font-size: clamp(18px, 1.2vw, 22px);
     line-height: 1.8;
     max-width: 650px;
     margin-bottom: 40px;
@@ -201,27 +217,6 @@ nav a.active {
     background: #4f84ff;
 }
 
-.about-section {
-    position: relative;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    padding: 0px 0px;
-    background:
-        linear-gradient(rgba(6,18,38,0.92), rgba(6,18,38,0.92)),
-        url("../img/map_texture.jpg");
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-.about-container {
-    max-width: 1300px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 140px 60px;
-    background: white;
-    }
-
 .section-tag {
     display: inline-block;
     padding: 10px 20px;
@@ -234,8 +229,53 @@ nav a.active {
     margin-bottom: 30px;
 }
 
+.content-shell {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    background:
+        linear-gradient(rgba(6,18,38,0.92), rgba(6,18,38,0.92)),
+        url("../img/fonas.png");
+
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+}
+
+.content-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background: white;
+}
+
+.about-section {
+    padding: 140px 60px 90px;
+    text-align: center;
+    background: transparent;
+}
+
+.maps-section {
+    padding: 90px 80px 140px;
+    background: transparent;
+}
+
+.about-container,
+.maps-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.map-showcase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 140px;
+}
+
 .about-container h2 {
-    font-size: 58px;
+    font-size: clamp(34px, 4vw, 58px);
     line-height: 1.1;
     color: black;
     margin-bottom: 34px;
@@ -244,51 +284,15 @@ nav a.active {
 .about-container p {
     max-width: 900px;
     margin: 0 auto 24px auto;
-    font-size: 21px;
+    font-size: clamp(16px, 1.2vw, 21px);
     line-height: 1.9;
     color: rgba(0,0,0,0.82);
-}
-
-.section {
-    margin: 50px 0;
-}
-
-.card,
-.info-card,
-.map-card {
-    background: white;
-    border-radius: 16px;
-    padding: 28px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-.section h2 {
-    margin-bottom: 20px;
-    color: #0f3d3e;
 }
 
 .info-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-}
-
-.info-card h3,
-.map-card h3 {
-    color: #0f3d3e;
-    margin-bottom: 12px;
-}
-
-.map-card {
-    margin-bottom: 35px;
-}
-
-.map-card iframe {
-    width: 100%;
-    height: 850px;
-    border: none;
-    border-radius: 12px;
-    margin-top: 18px;
 }
 
 .contact-form {
@@ -310,26 +314,148 @@ nav a.active {
     text-decoration: none;
 }
 
+.maps-section {
+    padding: 90px 80px 140px;
+    background: transparent;
+}
+
+.maps-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background: white;
+}
+
+.map-showcase:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.map-text {
+    flex: 1;
+    color: #111827;
+}
+
+.map-tag {
+    display: inline-block;
+
+    padding: 10px 18px;
+    margin-bottom: 26px;
+
+    border-radius: 999px;
+
+    background: rgba(74,144,226,0.15);
+    color: #7db4ff;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.map-text h2 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 26px;
+}
+
+.map-text p {
+    font-size: 20px;
+    line-height: 1.9;
+
+    color: #475467;
+
+    margin-bottom: 38px;
+
+    max-width: 650px;
+}
+
+.map-preview {
+    flex: 1;
+}
+
+.map-preview img {
+    width: 100%;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.45);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.map-preview img:hover {
+    transform: scale(1.02);
+
+    box-shadow:
+        0 40px 100px rgba(0,0,0,0.55);
+}
+
+.map-button {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 999px;
+    background: #2f6fff;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.map-button:hover {
+    transform: translateY(-3px);
+    background: #4f84ff;
+}
+
 @media (max-width: 900px) {
-    .header-content {
-        flex-direction: column;
-        text-align: center;
+    .site-header {
+        position: absolute;
+        padding: 18px 0;
     }
 
-    nav a {
-        display: inline-block;
-        margin: 8px;
+    .content-shell {
+        background-attachment: scroll;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav a,
+    .dropdown > a {
+        padding: 8px 14px;
+        font-size: 15px;
+    }
+
+    .dropdown-content {
+        right: 50%;
+        transform: translate(50%, 10px);
+    }
+
+    .dropdown:hover .dropdown-content {
+        transform: translate(50%, 0);
+    }
+
+    .hero {
+        min-height: 100vh;
+        padding-top: 160px;
     }
 
     .hero h2 {
-        font-size: 30px;
+        font-size: clamp(32px, 9vw, 48px);
     }
 
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .map-card iframe {
-        height: 450px;
+    .hero p {
+        font-size: 18px;
+        line-height: 1.7;
     }
 }

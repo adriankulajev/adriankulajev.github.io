@@ -1,122 +1,231 @@
 <!DOCTYPE html>
 <html lang="lt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alytaus GIS</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alytaus GIS</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="site-header">
+  <header class="site-header">
     <div class="container header-content">
-        <div class="nav-logo">
-    <img src="img/logo.png" alt="Alytaus GIS logo">
-    <span>Alytaus GIS</span>
-</div>
-  <nav>
-    <a href="#pradzia">Pradžia</a>
-    <a href="#apie">Apie</a>
+      <div class="nav-logo">
+        <img src="img/logo.png" alt="Alytaus GIS logo">
+        <span>Alytaus GIS</span>
+      </div>
+      <nav>
+        <a href="#pradzia">Pradžia</a>
+        <a href="#apie">Apie</a>
 
-    <div class="dropdown">
-        <a href="#zemelapiai">Žemėlapiai</a>
-        <div class="dropdown-content">
+        <div class="dropdown">
+          <a href="#zemelapiai">Žemėlapiai</a>
+          <div class="dropdown-content">
             <a href="#map1">Gyvenamųjų pastatų žemėlapis</a>
             <a href="#map2">Papildomas žemėlapis</a>
             <a href="#map3">Teminis žemėlapis</a>
             <a href="#map4">Pranešimų peržiūra</a>
+          </div>
         </div>
-    </div>
-    
-    <a href="kontaktai.html">Kontaktai</a>
-</nav>
-    </div>
-</header>
 
-<section class="hero" id="pradzia">
+        <a href="kontaktai.html">Kontaktai</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="pradzia">
     <div class="container hero-content">
-        <h2>Alytaus miesto žemėlapių portalas</h2>
-        <p>
-            Šioje svetainėje pateikiami praktinių užduočių metu sukurti interaktyvūs žemėlapiai,
-            skirti Alytaus miesto teritorijos, infrastruktūros ir geografinių duomenų analizei.
-        </p>
-        <a href="#zemelapiai" class="button">Peržiūrėti žemėlapius</a>
+      <h2>Alytaus miesto žemėlapių portalas</h2>
+      <p>
+        Šioje svetainėje pateikiami praktinių užduočių metu sukurti interaktyvūs žemėlapiai,
+        skirti Alytaus miesto teritorijos, infrastruktūros ir geografinių duomenų analizei.
+      </p>
+      <a href="#zemelapiai" class="button">Peržiūrėti žemėlapius</a>
     </div>
-</section>
+  </section>
 
-<main class="container">
+  <main>
+    <div class="content-shell">
+      <div class="content-container">
+        <section id="apie" class="about-section">
 
-<section id="apie" class="about-section">
+          <div class="about-container">
 
-    <div class="about-container">
+            <span class="section-tag">
+              APIE PORTALĄ
+            </span>
 
-        <span class="section-tag">
-            APIE PORTALĄ
-        </span>
+            <h2>
+              Interaktyvūs Alytaus miesto GIS žemėlapiai
+            </h2>
 
-        <h2>
-            Interaktyvūs Alytaus miesto GIS žemėlapiai
-        </h2>
+            <p>
+              Šioje svetainėje pateikiami praktinių užduočių metu sukurti
+              interaktyvūs žemėlapiai, skirti Alytaus miesto teritorijos,
+              infrastruktūros ir geografinių duomenų analizei.
+            </p>
+
+            <p>
+              Portale integruoti kepler.gl, Geoportal ir ArcGIS Online
+              pagrindu sukurti žemėlapiai, leidžiantys analizuoti miesto
+              duomenis bei vykdyti objektų peržiūrą.
+            </p>
+
+          </div>
+
+        </section>
+
+        <section id="zemelapiai" class="maps-section">
+
+          <div class="maps-container">
+
+            <div class="map-showcase">
+
+              <div class="map-text">
+                <span class="map-tag">1 PRAKTINIS</span>
+
+                <h2>Gyvenamųjų pastatų žemėlapis</h2>
+
+                <p>
+                  Kepler.gl aplinkoje parengtas Alytaus miesto
+                  gyvenamųjų pastatų analizės žemėlapis.
+                </p>
+
+                <a href="1praktinis/map_1.html" target="_blank" class="button">
+                  Atidaryti žemėlapį →
+                </a>
+              </div>
+
+              <div class="map-preview">
+                <img src="img/map1_preview.png" alt="Gyvenamųjų pastatų žemėlapio peržiūra">
+              </div>
+            </div>
+          </div>
+          <div class="map-showcase">
+
+    <div class="map-text">
+        <span class="map-tag">1 PRAKTINIS</span>
+
+        <h2>Papildomas analitinis žemėlapis</h2>
 
         <p>
-            Šioje svetainėje pateikiami praktinių užduočių metu sukurti
-            interaktyvūs žemėlapiai, skirti Alytaus miesto teritorijos,
-            infrastruktūros ir geografinių duomenų analizei.
+            Papildomas kepler.gl aplinkoje sukurtas Alytaus miesto
+            erdvinių duomenų analizės žemėlapis.
         </p>
 
-        <p>
-            Portale integruoti kepler.gl, Geoportal ir ArcGIS Online
-            pagrindu sukurti žemėlapiai, leidžiantys analizuoti miesto
-            duomenis bei vykdyti objektų peržiūrą.
-        </p>
-
+        <a href="1praktinis/map_2.html" target="_blank" class="button">
+            Atidaryti žemėlapį →
+        </a>
     </div>
 
-</section>
+    <div class="map-preview">
+        <img src="img/map2_preview.png" alt="Papildomo žemėlapio peržiūra">
+    </div>
 
-<section id="zemelapiai" class="section">
-    <h2>Interaktyvūs žemėlapiai</h2>
-
-    <div class="map-card" id="map1">
-    <h3>1 praktinis darbas – analitinis žemėlapis</h3>
-    <p>Kepler.gl aplinkoje parengtas Alytaus miesto duomenų analizės žemėlapis.</p>
-    <iframe src="1praktinis/map_1.html"></iframe>
 </div>
 
-    <div class="map-card" id="map2">
-        <h3>1 praktinis darbas – papildomas žemėlapis</h3>
-        <p>Kitas praktinio darbo metu sukurtas interaktyvus žemėlapis.</p>
-        <iframe src="1praktinis/map_2.html"></iframe>
+<div class="map-showcase">
+
+    <div class="map-text">
+        <span class="map-tag">2 PRAKTINIS</span>
+
+        <h2>Teminis žemėlapis</h2>
+
+        <p>
+            Geoportal ir QGIS duomenų pagrindu parengtas teminis
+            Alytaus miesto žemėlapis.
+        </p>
+
+        <a href="2_praktinis/map.html" target="_blank" class="button">
+            Atidaryti žemėlapį →
+        </a>
     </div>
 
-    <div class="map-card" id="map3">
-        <h3>2 praktinis darbas – teminis žemėlapis</h3>
-        <p>Geoportal ir QGIS duomenų pagrindu sukurtas teminis žemėlapis.</p>
-        <iframe src="2_praktinis/map.html"></iframe>
+    <div class="map-preview">
+        <img src="img/map3_preview.png" alt="Teminio žemėlapio peržiūra">
     </div>
 
-    <div class="map-card" id="map4">
-        <h3>3 praktinis darbas – pranešimų peržiūra</h3>
-        <p>ArcGIS Online pagrindu sukurtas žemėlapis, skirtas duomenų peržiūrai.</p>
-        <iframe src="3_praktinis/pranesimu_perziura.html"></iframe>
+</div>
+
+<div class="map-showcase">
+
+    <div class="map-text">
+        <span class="map-tag">3 PRAKTINIS</span>
+
+        <h2>Pranešimų peržiūra</h2>
+
+        <p>
+            ArcGIS Online pagrindu sukurtas žemėlapis, skirtas
+            registruotų pranešimų ir objektų peržiūrai.
+        </p>
+
+        <a href="3_praktinis/pranesimu_perziura.html" target="_blank" class="button">
+            Atidaryti žemėlapį →
+        </a>
     </div>
 
-    <div class="map-card" id="map5">
-        <h3>3 praktinis darbas – pranešimų registravimas</h3>
-        <p>Žemėlapis, skirtas naujų objektų arba pranešimų registravimui.</p>
-        <iframe src="3_praktinis/pranesimu_registravimas.html"></iframe>
+    <div class="map-preview">
+        <img src="img/map4_preview.png" alt="Pranešimų peržiūros žemėlapio peržiūra">
     </div>
-</section>
 
-</main>
+</div>
 
-<footer class="site-footer">
+<div class="map-showcase">
+
+    <div class="map-text">
+        <span class="map-tag">3 PRAKTINIS</span>
+
+        <h2>Pranešimų registravimas</h2>
+
+        <p>
+            ArcGIS Online aplinkoje parengtas žemėlapis, skirtas
+            naujų objektų arba pranešimų registravimui.
+        </p>
+
+        <a href="3_praktinis/pranesimu_registravimas.html" target="_blank" class="button">
+            Atidaryti žemėlapį →
+        </a>
+    </div>
+
+    <div class="map-preview">
+        <img src="img/map5_preview.png" alt="Pranešimų registravimo žemėlapio peržiūra">
+    </div>
+
+</div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-        <p>© 2026 Vilniaus miesto interaktyvūs žemėlapiai</p>
-        <p>Sukurta interneto technologijų ir GIS praktinei užduočiai</p>
-        <a href="kontaktai.html">Kontaktai</a>
+      <p>© 2026 Vilniaus miesto interaktyvūs žemėlapiai</p>
+      <p>Sukurta interneto technologijų ir GIS praktinei užduočiai</p>
+      <a href="kontaktai.html">Kontaktai</a>
     </div>
-</footer>
+  </footer>
+
+  <script>
+    let lastScrollY = window.scrollY;
+    const header = document.querySelector(".site-header");
+
+    window.addEventListener("scroll", () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 120) {
+        header.classList.add("hide");
+        header.classList.remove("show");
+      } else {
+        header.classList.remove("hide");
+        header.classList.add("show");
+      }
+
+      lastScrollY = currentScrollY;
+    });
+  </script>
 
 </body>
+
 </html>
